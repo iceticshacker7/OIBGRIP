@@ -4,7 +4,7 @@ public class ATMinterface {
 
     public static void main(String args[]) {
 
-        int balance = 100000, withdraw = 0, deposit = 0;
+        int balance = 100000, withdraw, deposit;
 
         Scanner sc = new Scanner(System.in);
 
@@ -13,8 +13,7 @@ public class ATMinterface {
             System.out.println("Choose 1 for Withdraw");
             System.out.println("Choose 2 for Deposit");
             System.out.println("Choose 3 for Check Balance");
-            System.out.println("Choose 4 for Transaction History");
-            System.out.println("Choose 5 for QUIT");
+            System.out.println("Choose 4 for EXIT");
             System.out.print("Choose the operation you want to perform:");
 
             int choice = sc.nextInt();
@@ -51,12 +50,8 @@ public class ATMinterface {
                     System.out.println("Balance : " + balance);
                     System.out.println("");
                     break;
+
                 case 4:
-                    System.out.println("Withdrawl amount : " + withdraw);
-                    System.out.println("Deposited amount : " + deposit);
-                    System.out.println("");
-                    break;
-                case 5:
 
                     System.exit(0);
             }
